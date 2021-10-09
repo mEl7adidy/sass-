@@ -1,0 +1,204 @@
+@import "variables";
+@import "mixins";
+@import "main";
+.header {
+  height: 950px;
+  background-image: url(/img/banner/home-banner.jpg);
+  @extend %background__img;
+  nav {
+    @extend %container;
+    @extend %display__flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    ul {
+      @extend %ul;
+      a {
+        text-transform: uppercase;
+      }
+    }
+  }
+  .header__body {
+    @extend %container;
+    @extend %display__flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5.5rem;
+    .header__title {
+      width: 40%;
+      h1 {
+        font-size: 4rem;
+        color: $white;
+      }
+      p {
+        color: $white;
+        padding: 2rem 0;
+      }
+      button {
+        @extend %btn;
+      }
+    }
+  }
+  .right__mobile {
+    width: 25%;
+    img {
+      width: 100%;
+    }
+  }
+}
+// unique features
+.unique {
+  @extend %container;
+  padding: 7rem 0;
+  .unique__title {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    h2 {
+      font-size: 2.3rem;
+    }
+    p {
+      padding: 1rem 0;
+    }
+  }
+  .unique__card {
+    @extend %display__flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+    div {
+      border: 1px solid $white;
+      padding: 1rem;
+      width: 23%;
+      box-shadow: 1px 4px 10px 1px $shadow;
+      figure {
+        padding: 1rem 0;
+      }
+      h3 {
+        padding: 1rem 0;
+      }
+      p {
+        padding-bottom: 2rem;
+      }
+    }
+  }
+}
+//........... believe.............
+.believe {
+  background-color: $believe_backgound;
+  padding: 6rem 0;
+  .believe_container {
+    @extend %display__flex;
+    justify-content: space-between;
+    align-items: center;
+    @extend %container;
+    .back_ground_mob {
+      width: 45%;
+      figure {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .believe_content {
+      width: 45%;
+      h2 {
+        font-size: xxx-large;
+        font-weight: 400;
+      }
+      p {
+        padding: 2rem 0;
+      }
+      button {
+        background-image: linear-gradient(left, $gradient_btn) !important;
+        padding: 1rem 3rem;
+        border-radius: 5px;
+        border: 0;
+        color: white;
+        font-weight: 600;
+        box-shadow: 0px 4px 13px 2px $shadow;
+      }
+    }
+  }
+}
+// ............................ 
+.second_believe{
+  background-color: white;
+}
+// ...........video...............
+.video{
+  div{
+    @extend %container;
+    padding: 5rem 0;
+    position: relative ;
+  figure{
+    position: absolute;
+    top: 44%;
+    left: 46%;
+  }
+}
+}
+//....................pricing table...................
+.Pricing {
+  background-color: $believe_backgound;
+  padding: 5rem 0;
+button{
+  background-color: $believe_backgound;
+font-size: smaller; 
+font-weight: 500;
+}
+}
+// .....testimonials..........
+.testimonials{
+  background-color: $believe_backgound;
+}
+// .......app..........
+.app{
+  background-image: linear-gradient(left, $gradient_back) !important;
+  div{
+    header{
+      width: 60% !important;
+    }
+  }
+}
+// latest news
+.latest_card{
+  background-color: $believe_backgound;
+  .date{
+    width: fit-content;
+  }
+}
+.footer{
+div{
+  div{
+    div{
+      ul{
+        li{
+          color: #ffffffcf;
+        }
+      }
+    }
+  }
+}
+form{
+  input::placeholder{
+      padding-left: 1rem;
+      font-size: smaller;
+      color: gray;
+  }
+  button{
+    background-image: linear-gradient(left, $gradient_btn) !important;
+    margin-left: -7rem;
+    color: white;
+  }
+}
+.act{
+  color: purple;
+}
+.social{
+  a{
+    background-color: #00000059;
+    padding: 0.3rem 0.5rem;
+  }
+}
+}
